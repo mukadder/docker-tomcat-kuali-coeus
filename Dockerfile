@@ -21,8 +21,8 @@ ADD SetupTomcat /SetupTomcat
 
 # Install Tomcat.
 RUN \
-  apt-get update && \
-  apt-get install -y curl && \
+#  apt-get update && \
+ # apt-get install -y curl && \
  # TOMCAT_MAJOR="8" && \
  # TOMCAT_VERSION="$(curl -s https://tomcat.apache.org/download-80.cgi | grep -A 7 '</select><input type="submit" value="Change">' | grep '<h3 id="' | sed 's/<h3 id="//' |$
  # TOMCAT_LINK="https://www.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz" && \
